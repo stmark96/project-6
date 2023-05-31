@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Roger Morris" />
+    <meta name="description" content="Contact Me" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/pika.jpg" />
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+      }
+      details {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      div {
+        text-align: center;
+      }
+      address {
+        text-align: center;
+      }
+      form {
+        overflow: hidden;
+      }
+      input {
+        float: right;
+        clear: both;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      .audio-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body bgcolor="yellow">
+    <header>
+      <form action="https://httpbin.org/get" method="get">
+        <label for="name"></label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="search"
+          required
+        />
+      </form>
+      <h1>My Personal Webpage</h1>
+      <br />
+      <hr />
+      <nav>
+        <p>
+          <a href="index.html">Home</a>&nbsp
+
+          <a href="hours.html">Blog</a>
+
+          <br />
+        </p>
+      </nav>
+      <figure>
+        <div>
+          <img
+            src="thanos.jpg"
+            alt="LTS Tacos"
+            title="Tacos ready to eat"
+            width="400"
+            height="260"
+          />
+        </div>
+      </figure>
+    </header>
+    <hr />
+    <main>
+      <section>
+        <h2>My Contact Form</h2>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Send Me A Message</legend>
+            <p>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@example.com"
+                required
+              />
+            </p>
+            <p>
+              <label for="message">Your Message</label>
+              <br />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="type your message here"
+              ></textarea>
+            </p>
+          </fieldset>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+      <section>
+        <h2>Location</h2>
+        <address>
+          1234 Correlation Drive <br />
+          HTML City, WA 54827-2938
+          <br /><br />
+          Phone: <a href="tel:9545553902">555-555-5555</a>
+        </address>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>im the owner of this house &copy;</p>
+    </footer>
+  </body>
+</html>
