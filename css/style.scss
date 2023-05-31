@@ -1,0 +1,67 @@
+$bgcolor: yellow;
+$textcolor: black;
+$fontsize: 22px;
+
+html {
+  font-size: $fontsize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+
+body {
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  background-color: $bgcolor;
+  color: $textcolor;
+  text-align: center;
+  animation-name: body;
+  animation-duration: 4s;
+}
+.red:hover {
+  color: black;
+  background: red;
+}
+.green:hover {
+  color: black;
+  background: green;
+}
+.blue:hover {
+  color: black;
+  background: blue;
+}
+th,
+td,
+caption {
+  border: 1px solid #333;
+  font-family: "Courier New", Courier, monospace;
+  border-collapse: separate;
+  padding: 0.5rem;
+}
+
+form {
+  overflow: hidden;
+}
+input {
+  float: right;
+  clear: both;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes body {
+  from {background-color: orange;}
+  to {background-color: yellow;}
+  
+}
